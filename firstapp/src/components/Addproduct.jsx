@@ -6,6 +6,8 @@ export default function AddProduct() {
     const [price,setPrice]=useState("")
     const [description,setDescription]=useState("")
     const [category,setCategory]=useState("")
+
+    
     const [stock,setStock]=useState("")
     const role=localStorage.getItem("role")
     const navigate=useNavigate()
