@@ -5,7 +5,6 @@ import Login from "./components/Login.jsx";
 import Navigation from "./components/Navigation.jsx";
 import AddProduct from "./components/AddProduct.jsx";
 import Cart from './components/Cart.jsx'
-
 export default function App() {
   return (
     <BrowserRouter>

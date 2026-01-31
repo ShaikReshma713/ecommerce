@@ -39,7 +39,8 @@ router.post("/add",isAuthenticated,async (req,res)=>{
     if(existingItem){
       existingItem.quantity+=quantity
       await cart.save()
-      
+      return res.status(200).json({"message":"cart updated successfully"})
+
     }
     else{
       const product = await Product.findById(productId)
